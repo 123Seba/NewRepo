@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 
     public class DbConnector {
-        private static String dbUrl="jdbc:mysql://localhost:3306/hotel1";
+        private static String dbUrl="jdbc:mysql://localhost:3306/backup";
         private static String username="root";
         private static String password="";
 
