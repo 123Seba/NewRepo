@@ -22,13 +22,6 @@ public class Main {
         System.out.println(result.getString("customer_name"));
         try
         {
-            File f = new File("beckup");
-            if(f.exists())
-            {
-                FileInputStream fin=new FileInputStream(f);
-                ObjectInputStream ois=new ObjectInputStream(fin);
-                Hotel.hotel_ob=(holder)ois.readObject();
-            }
             Scanner sc = new Scanner(System.in);
             int ch,ch2;
             char wish;
@@ -100,8 +93,7 @@ public class Main {
 
             }while(wish=='y'||wish=='Y');
 
-            Thread t=new Thread(new write(Hotel.hotel_ob));
-            t.start();
+
         }
         catch(Exception e)
         {
